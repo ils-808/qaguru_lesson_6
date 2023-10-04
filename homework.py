@@ -87,9 +87,10 @@ def print_func_name_and_args(func_original_name, *args):
     modified_output += ' ['
     for arg in args:
         modified_output += arg
-        if (args.index(arg) != len(args) - 1):
+        if args.index(arg) != len(args) - 1:
             modified_output += ', '
     modified_output += ']'
+    print(modified_output)
     return modified_output
 
 
